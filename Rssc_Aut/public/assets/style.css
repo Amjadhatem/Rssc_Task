@@ -1,0 +1,231 @@
+/* ------------------------------------------------------------------------- nav.css --------------------------------------------------------------------- */
+
+#header ul#topnav{display:block; float:right; width:100%; margin:20px 0 0 0; padding:0; list-style:none; font-size:12px; font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#header ul#topnav ul, #header li{float:right; list-style:none; margin:0; padding:0;}
+#header li a:link, #header li a:visited, #header li a:hover{display:block; margin:0 8px 0 0; padding:10px 20px; color:#FFFFFF; background-color:#003E61; border-left:1px solid #FFFFFF;}
+#header ul#topnav ul li a:link, #header ul#topnav ul li a:visited{border:none;}
+#header ul#topnav li.last a{margin-right:0;}
+#header li    a:hover, #header ul#topnav li.active a{color:#FFFFFF; background-color:#181E38;} /*  background-color:#FEA407;  background-color:#83A209 */
+#header li li a:link, #header li li a:visited{width:150px; float:none; margin:0; padding:7px 10px; font-size:12px; font-weight:normal; background-color:#003E61; border-left:1px solid #FFFFFF;}
+#header li li a:hover{color:#FFFFFF; background-color:#181E38;} /* background-color:#FEA407; background-color:#83A209 */
+#header li ul{background:#FFFFFF; z-index:9999; position:absolute; left:-999em; height:auto; width:170px; border-left:1px solid #FFFFFF; border-bottom:1px solid #FFFFFF;}
+#header li ul a{width:140px;}
+#header li ul ul{margin:-32px 0 0 0;}
+#header li:hover ul ul{left:-999em;}
+#header li:hover ul, #header li li:hover ul{left:auto;}
+#header li:hover{position:static;}
+#header li.last a{margin-right:0;}
+
+/* ----------------------------------------------Column Navigation------------------------------------- */
+
+#column .subnav{display:block; width:250px; padding:25px; background-color:#F9F9F9; margin-bottom:30px;}
+#column .subnav h2{margin:0 0 20px 0; padding:0 0 14px 0; font-size:20px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; color:#666666; background-color:#F9F9F9; line-height:normal; border-bottom:1px dotted #666666;}
+#column .subnav ul{margin:0; padding:0; list-style:none;}
+#column .subnav li{margin:0 0 3px 0; padding:0;}
+#column .subnav ul ul, #column .subnav ul ul ul, #column .subnav ul ul ul ul, #column .subnav ul ul ul ul ul{border-top:none; padding-top:0;}
+#column .subnav a{display:block; margin:0; padding:5px 10px 5px 20px; color:#777777; background:url("images/orange_file.gif") no-repeat 10px center #F9F9F9; text-decoration:none; border-bottom:1px dotted #666666;}
+#column .subnav a:hover{color:#FF9000; background-color:#F9F9F9;}
+#column .subnav ul ul a, #column .subnav ul ul ul a, #column .subnav ul ul ul ul a, #column .subnav ul ul ul ul ul a{background:url("images/black_file.gif") no-repeat #F9F9F9;}
+#column .subnav ul ul a{padding-left:40px; background-position:30px center;}
+#column .subnav ul ul ul a{padding-left:50px; background-position:40px center;}
+#column .subnav ul ul ul ul a{padding-left:60px; background-position:50px center;}
+#column .subnav ul ul ul ul ul a{padding-left:70px; background-position:60px center;}
+
+/* ------------------------------------------------------------------------- nav.css --------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------- forms.css --------------------------------------------------------------------- */
+
+form, fieldset, legend{margin:0; padding:0; border:none;}
+legend{display:none;}
+
+/* ----------------------------------------------Search Form------------------------------------- */
+
+#topbar #search{display:block; float:right;}
+#topbar input{display:block; float:left; width:229px; margin:0 5px 0 0; padding:5px; color:#FFFFFF; background-color:#003E61; border:1px solid #FFFFFF; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+#topbar input#go{width:auto; height:auto; margin:0; padding:4px;}
+
+/* ----------------------------------------------Forms in Content Area------------------------------------- */
+
+#container #respond{display:block; width:100%;}
+#container #respond input{width:170px; padding:2px; border:1px solid #CCCCCC; margin:5px 5px 0 0;}
+#container #respond textarea{width:98%; border:1px solid #CCCCCC; padding:2px; overflow:auto;}
+#container #respond p{margin:5px 0;}
+#container #respond #submit, #container #respond #reset{margin:0; padding:5px; color:#666666; background-color:#F7F7F7; border:1px solid #CCCCCC;}
+
+/* ----------------------------------------------Newsletter------------------------------------- */
+
+#footer form{display:block; width:300px; margin:0; padding:10px 0; border:none;}
+#footer input{display:block; float:left; width:245px; margin:0 5px 0 0; padding:5px; color:#666666; background-color:#FFFFFF; border:1px solid #1A3151; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+#footer input#news_go{width:auto; height:auto; margin:0; padding:4px;}
+
+/* ------------------------------------------------------------------------- forms.css --------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- layouts.css --------------------------------------------------------------------- */
+
+@import url("navi.css");
+@import url("forms.css");
+@import url("tables.css");
+
+html{overflow-y:scroll;}
+body{margin:0; padding:0; font-size:14px; font-family:verdana, Arial, Helvetica, sans-serif; color:#FFFFFF; background-color:#1A3151;}
+
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{margin:0; padding:0; list-style-type:none;}
+
+.clear{clear:both;}
+br.clear{clear:both; margin-top:-15px;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+img{margin:0; padding:0; border:none;}
+.imgl, .imgr{border:1px solid #DFDFDF; padding:5px; color:#666666; background-color:#FFFFFF;}
+.imgl{margin:0 8px 8px 0; clear:left;}
+.imgr{margin:0 0 8px 8px; clear:right;}
+
+/* ----------------------------------------------Wrapper------------------------------------- */
+
+div.wrapper{display:block; width:100%; margin:0; text-align:left;}
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{margin:0 0 20px 0; padding:0 0 8px 0; font-size:22px; font-weight:normal; font-family:Georgia, "Times New Roman", Times, serif; border-bottom:1px dashed #DDDDDD;}
+.col1{color:#FFFFFF; background-color:#181E38;} /* --- color:#003E61; --- */
+.col2{color:#FFFFFF; background-color:#FFFFFF;} /* --- background-color:#1F7EB6; --- */
+.col3{color:#666666; background-color:#89C7EB; border-bottom:10px solid #333333;}
+.col3 a{color:#1C282F; background-color:#89C7EB;}
+.col4{color:#333333; background-color:#FFFFFF;}
+.col4 a{color:#FF9900; background-color:#FFFFFF;}
+.col5{color:#CCCCCC; background-color:#37639A;}
+.col5 a{color:#FFFFFF; background-color:#37639A;}
+.col6{color:#CCCCCC; background-color:#1A3151;}
+.col6 a{color:#FFFFFF; background-color:#1A3151;}
+
+/* ----------------------------------------------Generalise------------------------------------- */
+
+#topbar, #header, #intro, #breadcrumb, #container, #footer, #copyright{display:block; position:relative; width:960px; margin:0 auto;}
+
+/* ----------------------------------------------TopBar------------------------------------- */
+
+#topbar{height:25px; padding:10px 0;}
+#topbar ul{margin:0; padding:0; list-style:none;}
+#topbar #social{display:block; float:left;}
+#topbar #social li{display:inline; margin-right:20px; cursor:pointer;}
+
+/* ----------------------------------------------Header------------------------------------- */
+
+#header{padding:20px 0; z-index:1000; font-family:Georgia, "Times New Roman", Times, serif;}
+#header .fl_left{display:block; float:left; width:260px;}
+#header h1, #header p{margin:0; padding:0;}
+#header h1{margin:0 0 0 0; font-size:36px; border:1px solid black;}
+#header h1 a{color:#181E38; background-color:#FFFFFF; vertical-align: top;}  /* #header h1 a{color:#FFFFFF; background-color:#1F7EB6;} */
+
+/* ----------------------------------------------Homepage Intro------------------------------------- */
+
+#intro{padding:30px 0;}
+/* #intro h2{margin:0 0 10px 0; padding:0 0 8px 0; color:#333333; background-color:#89C7EB; border-bottom:1px dotted #333333; text-transform:uppercase;} */
+#intro h2{margin:0 0 10px 0; padding:0 0 8px 0; color:#333333; background-color:#89C7EB; border-bottom:1px dotted #333333; } 
+#intro ul{margin:0; padding:0; list-style:none;}
+#intro li{display:block; float:left; width:225px; margin:0 20px 0 0; padding:0;}
+#intro li.last{margin-right:0;}
+#intro li p.imgholder{display:block; width:215px; height:125px; margin:0 0 15px 0; padding:4px; color:#000000; background-color:#FFFFFF; border:1px solid #000000;}
+#intro p.readmore{display:block; width:100%; margin:0; padding:0; text-align:right;}
+#intro p.readmore a{font-weight:bold;}
+
+/* ----------------------------------------------BreadCrumb------------------------------------- */
+
+#breadcrumb{padding:15px 0;}
+#breadcrumb ul{margin:0; padding:0; list-style:none;}
+#breadcrumb ul li{display:inline;}
+#breadcrumb ul li.current a{text-decoration:underline;}
+
+/* ----------------------------------------------Container------------------------------------- */
+
+#container{padding:30px 0;}
+#container h2{padding-bottom:8px; border-bottom:1px dotted #666666;}
+
+/* Homepage Services */
+
+#container #services{display:block; width:100%; margin:0 0 25px 0; padding:0 0 30px 0; border-bottom:1px dashed #333333;}
+
+/* Homepage Block */
+
+#services a{color:#003377; background-color:#F6F6F6; border:none;}
+#services ul, #services h2, #services p{margin:0; padding:0; list-style:none;}
+#services li{display:block; float:left; width:250px; margin:0 30px 0 0; padding:20px 25px; color:#000000; background-color:#F6F6F6;}
+#services li.last{margin-right:0;}
+#services li p{line-height:1.6em;}
+#services li div.imgholder{display:block;  width:240px; margin:15px 0; padding:4px; color:#315A8A; background-color:#FFFFFF; border:1px solid #315A8A;}
+#services li div.imgholder1{display:block; width:240px; margin:15px 0; padding:4px; color:#315A8A; background-color:#FFFFFF; border:1px solid #315A8A;}
+#services li div.imgholder img{width:240px; border:none; margin:0; padding:0;}
+#services li h2{padding-bottom:8px; border-bottom:1px dotted #6BA3A3; color:#000000; background-color:#F6F6F6;}
+#services p.more{display:block; width:100%; margin-top:15px; font-weight:bold; text-align:right; line-height:normal;}
+
+/* Content */
+
+#content{display:block; float:left; width:960px;}
+
+/* Comments */
+
+#comments{margin-bottom:40px;}
+#comments .commentlist{margin:0; padding:0;}
+#comments .commentlist ul{margin:0; padding:0; list-style:none;}
+#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even{margin:0 0 10px 0; padding:15px; list-style:none;}
+#comments .commentlist li.comment_odd{color:#666666; background-color:#F7F7F7;}
+#comments .commentlist li.comment_odd a{color:#FEA407; background-color:#F7F7F7;} /*--- color:#3E7060; ---*/
+#comments .commentlist li.comment_even{color:#666666; background-color:#E8E8E8;}
+#comments .commentlist li.comment_even a{color:#FEA407; background-color:#E8E8E8;} /*--- color:#3E7060; ---*/
+#comments .commentlist .author .name{font-weight:bold;}
+#comments .commentlist .submitdate{font-size:smaller;}
+#comments .commentlist p{margin:10px 5px 10px 0; padding:0; font-weight:normal; text-transform:none;}
+#comments .commentlist li .avatar{float:right; border:1px solid #EEEEEE; margin:0 0 0 10px;}
+
+/* ----------------------------------------------Column------------------------------------- */
+
+#column{display:block; float:right; width:300px;}
+#column .flickrbox, #column .holder{display:block; width:300px; margin-bottom:20px;}
+.flickrbox ul{margin:0; padding:0; list-style:none;}
+.flickrbox li{display:block; float:left; width:80px; height:80px; margin:0 15px 15px 0; padding:4px; color:#402720; background-color:#FFFFFF; border:1px solid #402720;}
+.flickrbox li.last{margin-right:0;}
+#column .holder p{line-height:1.6em;}
+#column h2{font-size:20px;}
+#column .holder h2.title{display:block; width:100%; height:65px; margin:0; padding:15px 0 0 0; font-size:20px; line-height:normal; border-bottom:1px dashed #666666;}
+#column .holder h2.title img{float:left; margin:-15px 8px 0 0; padding:5px; color:#402720; background-color:#FFFFFF; border:1px solid #402720;}
+#column .holder p.readmore{display:block; width:100%; font-weight:bold; text-align:right; line-height:normal;}
+#column div.imgholder{display:block; width:290px; margin:0 0 10px 0; padding:4px; color:#402720; background-color:#FFFFFF; border:1px solid #402720;}
+
+/* ----------------------------------------------Footer------------------------------------- */
+
+#footer{padding:20px 0;}
+#footer h2{font-size:18px; font-weight:normal; padding-bottom:8px; border-bottom:1px dotted #CCCCCC;}
+#footer p, #footer ul, #footer a{margin:0; padding:0; font-weight:normal; list-style:none; line-height:normal;}
+#footer li{margin-bottom:10px;}
+#footer li.last{margin:0;}
+#footer address{font-style:normal; line-height:1.5em; margin-bottom:3px;}
+#footer .footbox{display:block; float:left; width:300px; margin:0 30px 0 0; padding:0;}
+#footer .last{margin-right:0;}
+
+/* ----------------------------------------------Copyright------------------------------------- */
+
+#copyright{padding:15px 0;}
+#copyright p{margin:0; padding:0;}
+
+/* ------------------------------------------------------------------------- layouts.css --------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- styls.css --------------------------------------------------------------------- */
+
+table{width:100%; border-collapse:collapse; table-layout:auto; vertical-align: middle; margin-bottom:15px; border:1px solid #CCCCCC;}
+table thead th{color:#FFFFFF; background-color:#666666; border:1px solid #CCCCCC; border-collapse:collapse; text-align:center; table-layout:auto; vertical-align:middle;}
+/* table tbody td{vertical-align:top; border-collapse:collapse; border-left:1px solid #CCCCCC; border-right:1px solid #CCCCCC;} */
+table tbody td{vertical-align:top; border-collapse:collapse; border-left:0px solid #FFFFFF; border-right:0px solid #FFFFFF;}
+table thead th, table tbody td{padding:5px; border-collapse:collapse;}
+table tbody tr.light{color:#666666; background-color:#F7F7F7;}
+table tbody tr.dark{color:#666666; background-color:#E8E8E8;}
+
+/* ------------------------------------------------------------------------- styls.css --------------------------------------------------------------------- */
