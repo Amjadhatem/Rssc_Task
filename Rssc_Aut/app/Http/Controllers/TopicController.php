@@ -33,7 +33,6 @@ class TopicController extends Controller
         $data = $request->validate([
             'title' => 'required',
             'bio' => 'required',
-            'description' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Validation rules for image uploads
         ]);
     
@@ -47,7 +46,6 @@ class TopicController extends Controller
             'image' => $imagePath,
             'title' => $data['title'],
             'bio' => $data['bio'],
-            'description' => $data['description'],
         ]);
     
         return redirect(route('Topic'))->with('success', 'topic added successfully');
@@ -96,7 +94,6 @@ class TopicController extends Controller
         // return redirect(route('services'))->with('success', 'service updated successfully');
         $topic->title = $request->input('title');   
         $topic->bio = $request->input('bio');
-        $topic->description = $request->input('description');
     
         // Optional: You can add validation for the date here if needed
     

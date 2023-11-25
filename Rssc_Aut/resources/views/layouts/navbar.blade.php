@@ -18,6 +18,9 @@
     <li class="nav-item">
       <a class="nav-link" href="{{ route('Topic') }}">Topics</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ route('News') }}">News</a>
+    </li>
   </ul>
 
   <!-- Topbar Navbar -->

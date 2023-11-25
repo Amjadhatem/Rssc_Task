@@ -31,6 +31,12 @@
       <span>Topics</span></a>
   </li>
   
+  <li class="nav-item">
+    <a class="nav-link" href="{{ route('Topic') }}">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span>Topics</span></a>
+  </li>
+  
   {{-- <li class="nav-item">
     <a class="nav-link" href="{{ route('products') }}">
       <i class="fas fa-fw fa-tachometer-alt"></i>

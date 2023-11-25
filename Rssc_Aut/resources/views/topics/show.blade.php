@@ -22,10 +22,6 @@
             <label class="form-label">bio</label>
             <input type="text" name="bio" class="form-control" placeholder="Bio" value="{{ $topic->bio }}" readonly>
         </div>
-        <div class="col mb-3">
-            <label class="form-label">Description</label>
-            <textarea class="form-control" name="description" placeholder="Description" readonly>{{ $topic->description }}</textarea>
-        </div>
     </div>
     <div class="row">
         <div class="col mb-3">

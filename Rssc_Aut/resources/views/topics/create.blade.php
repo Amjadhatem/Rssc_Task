@@ -20,9 +20,6 @@
             <div class="col">
                 <input type="text" name="bio" class="form-control" placeholder="bio">
             </div>
-            <div class="col">
-                <textarea class="form-control" name="description" placeholder="description"></textarea>
-            </div>
         </div>
  
         <div class="row">

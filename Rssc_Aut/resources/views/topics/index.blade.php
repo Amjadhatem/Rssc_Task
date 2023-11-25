@@ -23,7 +23,6 @@
                 <th>image</th>
                 <th>title</th>
                 <th>bio</th>
-                <th>description</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -37,7 +36,6 @@
                         </td>
                         <td class="align-middle">{{ $to->title }}</td>
                         <td class="align-middle">{{ $to->bio }}</td>
-                        <td class="align-middle">{{ $to->description }}</td>  
                         <td class="align-middle">
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <a href="{{ route('Topic.show', $to->id) }}" type="button" class="btn btn-secondary">Details</a>

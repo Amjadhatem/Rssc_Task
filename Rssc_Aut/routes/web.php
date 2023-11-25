@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TopicController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\displayinfo;
 /*
 |--------------------------------------------------------------------------
@@ -102,6 +103,16 @@ Route::middleware('auth')->group(function () {
         Route::get('edit/{topic}', 'edit')->name('Topic.edit');
         Route::put('edit/{topic}', 'update')->name('Topic.update');
         Route::delete('destroy/{topic}', 'destroy')->name('Topic.destroy');
+    });
+
+    Route::controller(NewsController::class)->prefix('News')->group(function () {
+        Route::get('', 'index')->name('News');
+        Route::get('create', 'create')->name('News.create');
+        Route::post('store', 'store')->name('News.store');
+        Route::get('show/{news}', 'show')->name('News.show');
+        Route::get('edit/{news}', 'edit')->name('News.edit');
+        Route::put('edit/{news}', 'update')->name('News.update');
+        Route::delete('destroy/{news}', 'destroy')->name('News.destroy');
     });
  
     Route::get('/profile', [App\Http\Controllers\AuthController::class, 'profile'])->name('profile');
