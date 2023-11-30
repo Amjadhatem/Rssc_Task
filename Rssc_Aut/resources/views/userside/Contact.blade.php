@@ -9,37 +9,43 @@
 
 <!-- ----------------------------Content------------------------- -->
 
-<div class="wrapper col3">
-  <div id="breadcrumb">
-    <ul>
-      <li class="first">You Are Here</li>
-      <li>&#187;</li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
-</div>
-<div class="wrapper col4">
-  <div id="container">
-    <div id="content">
+<section class="Breif_container">
+  <div class="cd-content">
       <h1>Contact Us</h1>
-      
-      Telephone: +962 (0) 3 2092300<br><br>
-      Telephone: +962 (0) 3 2092310<br><br>
+      <hr>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <h2>Telephone: +962 (0) 3 2092300</h2>
+    </div>
+    
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <h2>Telephone: +962 (0) 3 2092310</h2>
+    </div>
+    
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <h2>Mobile: +962 79 500 90 89</h2>
+    </div>
+    
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <h2>E-Mail: <a style="text-decoration: none; color: #3a4993;" href="mailto:nabdulhadi@aut.edu.jo">mailto:nabdulhadi@aut.edu.jo</a></h2>
+    </div>
 
-      Mobile:    +962 79 500 90 89 <br><br>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <h2>RSSC - Red Sea Studies Center</h2>
+    </div>
+   
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <h2>Aqaba University of Technology</h2>
+    </div>
+    
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <h2>South of Aqaba, South Beach road, Opposite Aqaba Development Corporation Stores</h2>
+    </div>
 
-      E-Mail: <a href=mailto:nabdulhadi@aut.edu.jo>nabdulhadi@aut.edu.jo</a><br><br>
-
-      RSSC - Red Sea Studies Center<br><br>
-      Aqaba University of Technology<br><br>
-      South of Aqaba, South Beach road, Opposite Aqaba Development Corporation Stores,<br><br> 
-      Aqaba, Jordan<br><br>
-
-      <br><br>
-  </div>
-    <div class="clear"></div>
-  </div>
-</div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <h2>Aqaba, Jordan</h2>
+    </div>
+          
+  </section>
 
 
 {{-- ------------------------------content--------------------------- --}}

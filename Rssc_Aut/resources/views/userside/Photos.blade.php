@@ -9,28 +9,17 @@
 <!-- ----------------------------Content------------------------- -->
 
 
-<div class="wrapper col3">
-  <div id="breadcrumb">
-    <ul>
-      <li class="first">You Are Here</li>
-      <li>&#187;</li>
-      <li><a href="#">Gallery</a></li>
-      <li>&#187;</li>
-      <li><a href="#">Photos</a></li>
-    </ul>
-  </div>
-</div>
-<div class="wrapper col4">
-  <div id="container">
-    <div id="content">
+<section class="Breif_container">
+  
+  <div class="cd-content">
       <h1>Photos</h1>
-      <p>
-        Stay tuned.
-      </p>
+      <hr>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+     <p>Stay tuned.</p>
   </div>
-    <div class="clear"></div>
-  </div>
-</div>
+    </div>
+        
+  </section>
 
 <!-- ----------------------------Content------------------------- -->
 

@@ -1,54 +1,105 @@
-{{-- ----------------------------Header------------------------ --}}
 
-<div class="wrapper col2">
-    <div id="header">
-      <div>
-        <table style="border: 0px; border-color: #FFFFFF;">
-          <tr height="150">
-            <td align="Center" width="150">
-              <img src="{{ asset('assets/img/logo.png') }}" style="border: 0px; width: 150px; height: 150px;">
-            </td>
-            <td style="padding-top: 30px; padding-left: 20px; padding-right: 0px; width: 50px;">
-              <p style="font-size: 92px; color: #181E38;">RSSC</p>
-            </td>
-            <td style="padding-top: 40px; padding-left: 0px;">
-              <p style="font-size: 36px; color: #181E38;">Red Sea <br>Studies Center</p>
-            </td>
-          </tr>
-        </table>
-        </div>
-        
-      <ul id="topnav">
-        <li class="last"><a href="/Forms">Forms</a></li>
-        <!--<li><a href="pages/Partners.html">Partners</a></li>-->
-        <li><a href="/Announcements">Announcements</a></li>
-        <li><a href="/Events">Events</a></li>
-        <li><a href="/Photos">Gallery</a>
-          <ul>
-            <li><a href="/Videos">Videos</a></li>
-            <li><a href="/Photos">Photos</a></li>
-          </ul>
-        </li>
-        <li><a href="/Training">Services</a>
-          <ul>
-            <li><a href="/Training">Training</a></li>
-            <li><a href="/Support">Support & Research</a></li>
-            <li><a href="/Network">Network</a></li>
-          </ul>
-        </li>
-        <li><div><a href="#">About Us</a></div>
-          <ul>
-            <li><a href="/President">President</a></li>
-            <li><a href="AboutUS">Brief</a></li>
-            <li><a href="Objectives">Objectives</a></li>
-            <li><a href="/Director">Founding Director</a></li>
-          </ul>
-        </li>
-        <li><a href="/ALECSO_Chair">ALECSO Chair</a></li>
-        <li><a href="/">Home</a></li>
+<header>
+
+<!--------------------------------- Navigation Section --------------------------------->
+
+<nav class="navbar-container container">
+  <!-- Navigation Content -->
+  <div class="icons_media">
+      <ul>
+          <li><a href="#"><img src="{{ asset('assets/img/facebook.png') }}" width="40" height="40" alt="Facebook" /></a></li>
+          <li><a href="#"><img src="{{ asset('assets/img/linkedin.png') }}" width="40" height="40" alt="LinkedIn" /></a></li>
+          <li class="last"><a href="#"><img src="{{ asset('assets/img/google.png') }}" width="40" height="40" alt="Google" /></a></li>
       </ul>
-      <br class="clear" />
-    </div>
   </div>
+  <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+  </button>
+  <div id="navbar-menu" aria-labelledby="navbar-toggle">
+      <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="#">Arabic</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#">Contact</a></li>
+      </ul>
+  </div>
+</nav>
 
-{{-- ----------------------------Header------------------------ --}}
+<!--------------------------------- Navigation Section --------------------------------->
+
+<hr style="width: 70%;">
+
+<!--------------------------------- header Section --------------------------------->
+
+<section class="main_cont">
+
+<div class="main2">
+<div class="img_cont">
+<img src="{{ asset('assets/img/logo aut 2.png') }}" alt="logo">
+</div>
+<div class="cont2">
+  <h1>RSSC</h1>
+  <h2>	
+    Red Sea <br>
+    Studies Center</h2>
+</div>
+</div>  
+</section>
+
+<!--------------------------------- header Section --------------------------------->
+
+<!--------------------------------- SideBar Section --------------------------------->
+
+<!-- Slider Section -->
+<div class="slideshow-container">
+<div class="slide" style="background: linear-gradient(to right,#1B1F34 ,rgba(27 , 31 , 52 , 0.0)) ,url({{ asset('assets/img/1P7A0984.JPG') }}); background-position: center; background-size: cover;"></div>
+<div class="slide" style="background: linear-gradient(to right,#1B1F34 ,rgba(27 , 31 , 52 , 0.0)) ,url({{ asset('assets/img/RedSea1.jpg') }}); background-position: center; background-size: cover;"></div>
+<div class="slide" style="background: linear-gradient(to right,#1B1F34 ,rgba(27 , 31 , 52 , 0.0)) ,url({{ asset('assets/img/RedSea2.jpg') }}); background-position: center; background-size: cover;"></div>
+<div class="slide" style="background: linear-gradient(to right,#1B1F34 ,rgba(27 , 31 , 52 , 0.0)) ,url({{ asset('assets/img/1P7A1000.JPG') }}); background-position: center; background-size: cover;"></div>
+
+<!-- Previous and Next buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!--------------------------------- SideBar Section --------------------------------->
+
+<!--------------------------------- Options Bar --------------------------------->
+<div class="options-container">
+<a href="/"><div class="option">Home</div></a>
+<a href="/ALECSO_Chair"><div class="option">ALESCO Chair</div></a>
+<div class="dropdown">
+<div class="dropdown_option">About Us</div>
+  <div class="dropdown-content">
+      <a href="/President">President</a>
+      <a href="/AboutUS">Breif</a>
+      <a href="/Objectives">Objectives</a>
+      <a href="/Director">Founding directoe</a>
+  </div>
+</div>
+<div class="dropdown">
+<div class="dropdown_option">Services</div>
+  <div class="dropdown-content">
+      <a href="/Training">Training</a>
+      <a href="/Support">Support & Research</a>
+      <a href="/Network">Networking</a>
+  </div>
+</div>
+<div class="dropdown">
+<div class="dropdown_option">Gallary</div>
+  <div class="dropdown-content">
+      <a href="/Videos">Vedios</a>
+      <a href="/Photos">Photos</a>
+  </div>
+</div>
+
+
+<a href="/Events"><div class="option">Events</div></a>
+<a href="/Announcements"><div class="option">Announcements</div></a>
+<a href="/Forms"><div class="option">Forms</div></a>
+
+</div>
+
+<!--------------------------------- Options Bar --------------------------------->
+
+</header>
